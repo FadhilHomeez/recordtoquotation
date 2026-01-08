@@ -1,0 +1,10 @@
+langchain
+langgraph
+langsmith
+psycopg2-binary
+sqlalchemy
+thefuzz[speedup]
+pydantic
+pandas
+openpyxl
+python-dotenv
