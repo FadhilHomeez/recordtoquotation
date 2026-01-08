@@ -26,7 +26,7 @@ def extractor_node(state: RenovationState) -> Dict[str, Any]:
 
     print(f"Extracting items from transcript ({len(transcript_text)} chars)...")
 
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-3-pro-preview", temperature=0)
     
     prompt = ChatPromptTemplate.from_messages([
         ("system", """You are an expert renovation quantity surveyor. 

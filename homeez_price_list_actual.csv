@@ -1,0 +1,174 @@
+,,,,,HACKING PRICE LIST,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Service_ID,OLD ID,Service_Status,Service_Category,Sub_Category,Property_Type,Property_Status,Property_Room,Area,Name,Includes,Quantity,Unit,Price,Wastage,Competitor Price (1.4X),Description of work,Addon_ID,
+,010022,new,Hacking,Protection,HDB,"new , resale",All,All,Supply & Lay Corrugated Paper (Single Layer) as Floor Protection (1 round only) ,,1,Package,300,,400,Lay corrugated paper to protect existing flooring or new flooring.,,
+,010083,new,Hacking,,HDB,resale,All,All,"Supply & Lay Corrugated Paper (Single Layer) as Floor Protection (1 round only)
+> Includes: Haulage of New & Raw Materials
+> Includes: Clearing of Debris (up to 2 trips only)",,1,package,350,,500,Lay corrugated paper to protect existing flooring or new floorings. Includes haulage & clearing of debris.,,WIL BE DELETED
+,010100,new,Hacking,Protection,HDB,"new (premium)
+new (standard)",All,All,Supply & Lay Corrugated Paper (Single Layer) as Floor Protection (1 round only),,1,package,300,,,Lay corrugated paper to protect existing flooring or new flooring.,,
+,010101,new,Hacking,"- Haulage (Bring up wet work materials)
+- Clearing of debris (clear rubbish)
+
+note: this service is under two sub cats",HDB,"new (premium)
+new (standard)",All,All,"Haulage of New & Raw Materials
+>Includes: Clearing of Debris (up to 2 trips only)",,1,package,250,,,To haul materials for wet works. Includes clearing of debris.,,
+,010102,new,Hacking,"- Haulage (Bring up wet work materials)
+- Clearing of debris (clear rubbish)
+
+
+note: this service is under two sub cats",HDB,"new , resale",All,All,"Haulage of New & Raw Materials
+>Includes: Clearing of Debris (up to 2 trips only)",,1,package,250,,,To haul materials for wet works. Includes clearing of debris.,,
+,010103,new,Hacking,,HDB,new (standard),All,All,"Supply & Lay Corrugated Paper (Single Layer) as Floor Protection (1 round only)
+> Includes: Clearing of Debris (up to 2 trips only)",,1,package,350,,,Lay corrugated paper to protect existing flooring or new floorings. Includes clearing of debris.,,WIL BE DELETED
+,010103,new,Hacking,- Clearing of debris (clear rubbish),HDB,"new , resale",All,All,Extra Round Of Clearing of Debris (1 trip only),,1,package,250,,,To clear debris in the house.,,
+,010070,new,Hacking,,HDB,"new , resale",2,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (HDB 2-Room),,1,Package,2100,,3200,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010001,new,Hacking,,HDB,"new , resale",3,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (HDB 3-Room),,1,Package,2600,,3640,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010002,new,Hacking,,HDB,"new , resale",4,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (HDB 4-Room),,1,Package,2900,,4200,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010003,new,Hacking,,HDB,"new , resale",5,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (HDB 5-Room),,1,Package,3600,,5400,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010004,new,Hacking,,HDB,"new , resale",EA,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (EA),,1,Package,3900,,5800,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010005,new,Hacking,,HDB,"new , resale",EM,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (EM),,1,Package,4800,,7000,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010071,new,Hacking,,HDB,"new , resale",3-Gen,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (HDB 3-Gen),,1,Package,3600,,5400,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010091,new,Hacking,,HDB,Resale,All,All,Small Hacking Package For HDB (Removal Of Up To 3x Wardrobes And/Or Carpentry Fixtures) ,,,Package,500,,700,"Includes removal of all window grilles. Excludes dismantling of kitchen cabinetry. 
+",,
+,010044,new,Hacking,,HDB,Resale,All,All,Medium Hacking Package For HDB (Removal Of Up To 5x Wardrobes And/Or Carpentry Fixtures) ,,1,Package,800,,1100,"Includes removal of all window grilles. Excludes dismantling of kitchen cabinetry. 
+",,
+,010045,new,Hacking,,HDB,Resale,All,All,Large Hacking Package For HDB (Removal Of Up To 10x Wardrobes And/Or Carpentry Fixtures) ,,1,Package,1900,,2700,Includes removal of all window grilles & kitchen cabinetry. ,,
+,010043,new,Hacking,,HDB,Resale,All,All,Supply Labour To Hack Skirting For Entire Unit,,1,Package,500,,700,"Includes removal of all window grilles. Excludes dismantling of kitchen cabinetry. 
+",,
+,010021,new,Hacking,,HDB,"new , resale",All,All,Supply Labour To Hack Full-Height Wall (HDB),,1,Ft,50,,100,To demolish all concrete walls. Cost to make good hacked wall is separate. ,,
+,010055,new,Hacking,,HDB,"new , resale",All,All,Supply Labour To Hack Half-Height Wall (HDB),,1,Ft,50,,100,Includes demolition of concrete walls up to 1.5m in height. Cost to make good hacked wall is separate. ,,
+,010058,new,Hacking,,HDB,"new , resale",All,All,Supply Labour To Hack A Door Entrance (HDB),,1,Package,150,,250,To demolish a standard door entrance (D900mm x H2100mm).,,
+,010061,new,Hacking,,HDB,"new , resale",All,All,Supply Labour To Dismantle Door & Door Frame (HDB),,1,Package,50,,100,To dismantle all doors & door frames in the unit. ,,
+,010068,new,Hacking,,HDB,"new , resale",All,All,Supply Labour To Dismantle Doors,,1,Package,30,,0,To dismantle 1 door in the house.,,
+,010063,new,Hacking,,HDB,"new , resale",All,Foyer / Living / Dining ,Supply Labour To Hack Floor Tiles,,1,sqft,2.8,,4,Includes haulage of tiles & clearing of debris for affected areas only. ,,
+,010069,new,Hacking,,HDB,"new , resale",All,Service Yard,Supply Labour To Hack Service Yard Floor Tiles ,,1,Package,300,,500,To hack all floor tiles at service yard area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010011,new,Hacking,,HDB,new,All,Kitchen & Toilet,Supply Labour To Hack Floor Tiles In Kitchen & 2x Toilets (HDB),,1,Package,1500,,2200,"To hack all floor tiles for 1 kitchen & 2 Toilets. Includes the haulage, clearing of debris, and dismantling of Toilet accessories for these affected areas only. ",,
+,010006,new,Hacking,,HDB,resale,All,Kitchen & Toilet,Supply Labour To Hack Floor & Wall Tiles In Kitchen & 2x Toilets (Resale HDB Only),,1,Package,2100,,3000,"To hack all floor & wall tiles for 1 kitchen & 2 Toilets. Includes haulage, clearing of debris, dismantling of kitchen cabinets.",,
+,010117,new,Hacking,,HDB,resale,All,Kitchen & Toilet,Supply Labour To Hack Floor & Wall Tiles In Kitchen & 3x Toilets (Resale HDB Only),,1,Package,3500,,4900,"To hack all floor & wall tiles for 1 kitchen & 3 Toilets. Includes haulage, clearing of debris, dismantling of kitchen cabinets.",,
+,010008,new,Hacking,,HDB,resale,All,Kitchen,Supply Labour To Hack Kitchen Floor & Wall Tiles (Resale HDB),,1,Package,1200,,1700,To hack all floor & wall tiles for kitchen including the dismantling of kitchen cabinets. Includes haulage of tiles & clearing of debris for kitchen area only. ,,
+,010009,new,Hacking,,HDB,"new , resale",All,Kitchen,Supply Labour To Hack Kitchen Wall Tiles (HDB),,1,Package,1000,,1200,"To hack all wall tiles for kitchen. Includes the haulage, clearing of debris, and dismantling of kitchen cabinets only. ",,
+,010010,new,Hacking,,HDB,"new , resale",All,Kitchen,Supply Labour To Hack Kitchen Floor Tiles (HDB),,1,Package,900,,1200,"To hack all floor tiles for kitchen. Includes the haulage, clearing of debris, and dismantling of kitchen cabinets only. ",,
+,010012,new,Hacking,,HDB,"new , resale",All,Toilet,Supply Labour To Hack Floor Tiles & Wall Tiles In 1x Toilet (HDB),,1,Package,700,,1200,"To hack all floor & wall tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010013,new,Hacking,,HDB,"new , resale",All,Toilet,Supply Labour To Hack Floor Tiles In 1x Toilet (HDB),,1,Package,400,,700,"To hack all floor tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010014,new,Hacking,,HDB,"new , resale",All,Toilet,Supply Labour To Hack Wall Tiles In 1x Toilet (HDB),,1,Package,500,,800,"To hack all wall tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010015,new,Hacking,,HDB,"new , resale",All,Kitchen,Supply Labour To Hack Sink & Stove Concrete Support (HDB),,1,Package,300,,500,To hack all sink & stove concrete supports in the kitchen area only. ,,
+,010007,new,Hacking,,HDB,"new , resale",All,"Bedroom, Study Room",Supply Labour To Hack Floor Tiles In 1x Room (HDB) ,,1,Package,500,,800,To hack all flooring in 1 room. Includes haulage of tiles & clearing of debris for 1 room only. ,,
+,010016,new,Hacking,,HDB,"new , resale",All,Balcony,Supply Labour To Hack Floor & Wall Tiles At Balcony Area (HDB),,1,Package,500,,900,To hack all floor & wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010017,new,Hacking,,HDB,"new , resale",All,Balcony,Supply Labour To Hack Floor Tiles At Balcony Area (HDB),,1,Package,300,,500,To hack all floor tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010018,new,Hacking,,HDB,"new , resale",All,Balcony,Supply Labour To Hack Wall Tiles At Balcony Area (HDB),,1,Package,400,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010105,new,Hacking,,HDB,"new , resale",All,"Bedroom, Study Room",Supply Labour To Dismantle Parquet Flooring In 1x Room (HDB),,1,Package,400,,600,To dismantle Parquet flooring at 1x Bedroom only. Excludes the hacking of cement screed below. ,,
+,010106,new,Hacking,,HDB,"new , resale",All,Foyer / Living / Dining ,Supply Labour To Dismantle Parquet Flooring (HDB),,1,Package,1000,,600,To dismantle Parquet flooring at Living Area only. Excludes the hacking of cement screed below. ,,
+,010107,new,Hacking,,HDB,"new , resale",All,"Bedroom, Study Room",Supply Labour To Dismantle Vinyl Flooring In 1x Room (HDB),,1,Package,300,,600,To dismantle Vinyl flooring at 1x Bedroom only. Excludes the hacking of cement screed below. ,,
+,010108,new,Hacking,,HDB,"new , resale",All,Foyer / Living / Dining ,Supply Labour To Dismantle Vinyl Flooring (HDB),,1,Package,800,,600,To dismantle Vinyl flooring at Living Area only. Excludes the hacking of cement screed below. ,,
+,,,,,,,,,,,,,,,,,,
+,010084,new,Hacking,"- Haulage (Bring up wet work materials)
+- Clearing of debris (clear rubbish)
+
+note: this service is under two sub cats",Condo,"new , resale",All,All,"Haulage of New & Raw Materials
+> Includes: Clearing of Debris (up to 2 trips only)",,1,Package,300,,600,Lay corrugated paper to protect existing flooring or new floorings. Includes haulage & clearing of debris.,,
+,010041,new,Hacking,Protection,Condo,"new , resale",All,All,Supply & Lay Corrugated Paper As Protection (Condo),,1,Package,300,,500,Lay corrugated paper to protect existing flooring or new floorings,,
+,010041,new,Hacking,- Clearing of debris (clear rubbish),Condo,"new , resale",All,All,Extra Round Of Clearing of Debris (1 trip only),,1,Package,250,,500,Lay corrugated paper to protect existing flooring or new floorings,,
+,010072,new,Hacking,,Condo,"new , resale",1,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (Studio),,1,Package,2100,,3200,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010073,new,Hacking,,Condo,"new , resale",2,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (2 Bedder),,1,Package,2500,,3500,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010074,new,Hacking,,Condo,"new , resale",3,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (3 Bedder),,1,Package,2900,,4200,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010075,new,Hacking,,Condo,"new , resale",4,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (4 Bedder),,1,Package,3600,,5400,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010076,new,Hacking,,Condo,"new , resale",5,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (5 Bedder),,1,Package,4800,,7000,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010077,new,Hacking,,Condo,"new , resale",Penthouse,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (Penthouse)  (Quote Upon Site Visit) ,,1,Package,0,,0,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010046,new,Hacking,,Condo,Resale,All,All,Small Hacking Package For Condo (Removal Of Up To 3x Wardrobes And/Or Carpentry Fixtures),,1,Package,600,,900,"Includes removal of all window grilles. Excludes dismantling of kitchen cabinetry. 
+",,
+,010047,new,Hacking,,Condo,Resale,All,All,Medium Hacking Package For Condo (Removal Of Up To 5x Wardrobes And/Or Carpentry Fixtures),,1,Package,1000,,1400,"Includes removal of all window grilles. Excludes dismantling of kitchen cabinetry. 
+",,
+,010048,new,Hacking,,Condo,Resale,All,All,Large Hacking Package For Condo (Removal Of Up To 10x Wardrobes And/Or Carpentry Fixtures),,1,Package,2400,,3400,Includes removal of all window grilles & kitchen cabinetry. ,,
+,010042,new,Hacking,,Condo,"new , resale",All,All,Supply Labour To Hack All Skirting In Whole Unit (Condo),,1,Package,220,,300,Hacking out of all skirtings in whole house.,,
+,010040,new,Hacking,,Condo,"new , resale",All,All,Supply Labour To Hack Full-Height Wall (Condo),,1,Ft,50,,100,To demolish all concrete walls. Cost to make good hacked wall is separate. ,,
+,010056,new,Hacking,,Condo,"new , resale",All,All,Supply Labour To Hack Half-Height Wall (Condo),,1,Ft,50,,100,Includes demolition of concrete walls up to 1.5m in height. Cost to make good hacked wall is separate. ,,
+,010086,new,Hacking,,"
+Condo","new , resale",All,All,Supply Labour To Dismantle Doors,,1,Package,30,,0,To dismantle 1 door in the house.,,
+,010039,new,Hacking,,Condo,"new , resale",All,All,Supply Labour To Dismantle Door & Door Frame (Condo),,1,Package,60,,100,To dismantle all doors & door frames in the unit. ,,
+,010059,new,Hacking,,Condo,"new , resale",All,All,Supply Labour To Hack A Door Entrance (Condo),,1,Package,150,,250,To demolish a standard door entrance (D900mm x H2100mm).,,
+,010088,new,Hacking,,"
+Condo","new , resale",All,Foyer / Living / Dining ,Supply Labour To Hack Floor Tiles (Condo),,1,sqft,2.8,,4,Includes haulage of tiles & clearing of debris for affected areas only. ,,
+,010097,new,Hacking,,Condo,"new , resale",All,Service Yard,Supply Labour To Hack Service Yard Floor Tiles ,,1,Package,300,,500,To hack all floor tiles at service yard area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010027,new,Hacking,,Condo,"new , resale",All,Kitchen,Supply Labour To Hack Kitchen Wall Tiles (Condo),,1,Package,1100,,1600,"To hack all wall tiles for kitchen. Includes the haulage, clearing of debris, and dismantling of kitchen cabinets only. ",,
+,010028,new,Hacking,,Condo,"new , resale",All,Kitchen,Supply Labour To Hack Kitchen Floor Tiles (Condo),,1,Package,1000,,1600,"To hack all floor tiles for kitchen. Includes the haulage, clearing of debris, and dismantling of kitchen cabinets only. ",,
+,010030,new,Hacking,,Condo,"new , resale",All,Toilet,Supply Labour To Hack Floor Tiles & Wall Tiles In 1x Toilet (Condo),,1,Package,900,,1200,"To hack all floor & wall tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010031,new,Hacking,,Condo,"new , resale",All,Toilet,Supply Labour To Hack Floor Tiles In Toilet (Condo),,1,Package,500,,900,"To hack all floor tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010032,new,Hacking,,Condo,"new , resale",All,Toilet,Supply Labour To Hack Wall Tiles In Toilet (Condo),,1,Package,700,,1100,"To hack all wall tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010033,new,Hacking,,Condo,"new , resale",All,Kitchen,Supply Labour To Hack Sink & Stove Concrete Support (Condo),,1,Package,300,,420,To hack all sink & stove concrete supports in the kitchen area only. ,,
+,010025,new,Hacking,,Condo,"new , resale",All,"Bedroom, Study Room",Supply Labour To Hack Floor Tiles In 1x Room (Condo),,1,Package,600,,800,To hack all flooring in 1 room. Includes haulage of tiles & clearing of debris for 1 room only. ,,
+,010034,new,Hacking,,Condo,"new , resale",All,Balcony,Supply Labour To Hack Floor & Wall Tiles In Balcony (Condo),,1,Package,700,,900,To hack all floor & wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010035,new,Hacking,,Condo,"new , resale",All,Balcony,Supply Labour To Hack Floor Tiles In Balcony (Condo),,1,Package,400,,600,To hack all floor tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010036,new,Hacking,,Condo,"new , resale",All,Balcony,Supply Labour To Hack Wall Tiles In Balcony (Condo),,1,Package,400,,700,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010024,new,Hacking,,Condo,"new , resale",All,Kitchen & Toilet,Supply Labour To Hack Floor & Wall Tiles In Kitchen & 2x Toilets (Condo),,1,Package,2500,,3800,"To hack all floor & wall tiles for 1 kitchen & 2 Toilets. Includes haulage, clearing of debris, dismantling of kitchen cabinets.",,
+,010026,new,Hacking,,Condo,"new , resale",All,Kitchen,Supply Labour To Hack Kitchen Floor & Wall Tiles (Condo),,1,Package,1500,,3400,To hack all floor & wall tiles for kitchen including the dismantling of kitchen cabinets. Includes haulage of tiles & clearing of debris for kitchen area only. ,,
+,010029,new,Hacking,,Condo,"new , resale",All,Kitchen & Toilet,Supply Labour To Hack Floor Tiles In Kitchen & 2x Toilets (Condo),,1,Package,2100,,3200,"To hack all floor tiles for 1 kitchen & 2 Toilets. Includes the haulage, clearing of debris, and dismantling of Toilet accessories for these affected areas only. ","500015, 500001 ,500014",
+,010109,new,Hacking,,Condo,"new , resale",All,"Bedroom, Study Room",Supply Labour To Hack Parquet Flooring In 1x Room (Condo),,1,Package,400,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010110,new,Hacking,,Condo,"new , resale",All,Foyer / Living / Dining ,Supply Labour To Hack Parquet Flooring At Living Area (Condo),,1,Package,1000,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010111,new,Hacking,,Condo,"new , resale",All,"Bedroom, Study Room",Supply Labour To Hack Vinyl Flooring In 1x Room (Condo),,1,Package,300,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010112,new,Hacking,,Condo,"new , resale",All,Foyer / Living / Dining ,Supply Labour To Hack Vinyl Flooring At Living Area (Condo),,1,Package,800,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,,,,,,,,,,,,,,,,,,
+,010085,new,Hacking,"- Protection
+- Haulage (Bring up wet work materials)
+- Clearing of debris (clear rubbish)
+
+note: this service is under three sub cats",Landed,"new , resale",All,All,"Supply & Lay Corrugated Paper (Single Layer) as Floor Protection (1 round only)
+> Includes: Haulage of New & Raw Materials
+> Includes: Clearing of Debris (up to 2 trips only)",,1,Package,850,,1200,Lay corrugated paper to protect existing flooring or new floorings. Includes haulage & clearing of debris.,,
+,010050,new,Hacking,Protection,Landed,"new , resale",All,All,Washing & Protection Paper Package (Landed) (Quote Upon Site Visit) ,,1,Package,0,,,Includes 1x Haulage For Clearing Of Rubbish,,
+,010078,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Hack Floor & Wall Tiles In Whole House (Landed) (Quote Upon Site Visit) ,,1,Package,0,,0,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010082,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Hack Wall & Floor Finishes In Kitchen (Landed) (Quote Upon Site Visit) ,,1,Package,0,,0,"To hack all floor & wall tiles for whole house. Includes haulage, clearing of debris, dismantling of kitchen cabinets, dismantling doors, and other smaller items which you need help in removing. For bigger built-in furnitures, additional costs may incur. ",,
+,010051,new,Hacking,,Landed,Resale,All,All,Small Hacking Package For Landed (Removal Of Up To 3x Wardrobes And/Or Carpentry Fixtures),,1,Package,600,,900,"Includes removal of all window grilles. Excludes dismantling of kitchen cabinetry. 
+",,
+,010052,new,Hacking,,Landed,Resale,All,All,Medium Hacking Package For Landed (Removal Of Up To 5x Wardrobes And/Or Carpentry Fixtures) ,,1,Package,1000,,1400,"Includes removal of all window grilles. Excludes dismantling of kitchen cabinetry. 
+",,
+,010053,new,Hacking,,Landed,Resale,All,All,Large Hacking Package For Landed (Removal Of Up To 10x Wardrobes And/Or Carpentry Fixtures),,1,Package,2400,,3400,Includes removal of all window grilles & kitchen cabinetry. ,,
+,010054,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Hack Full-Height Wall (Landed),,1,Ft,50,,100,Includes demolition of all concrete walls up to 3m in height. Cost to make good hacked wall is separate. ,,
+,010057,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Hack Half-Height Wall (Landed),,1,Ft,50,,100,Includes demolition of concrete walls up to 1.5m in height. Cost to make good hacked wall is separate. ,,
+,010060,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Hack A Door Entrance (Landed),,1,Package,150,,250,To demolish a standard door entrance (D900mm x H2100mm).,,
+,010089,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Dismantle Door & Door Frame (Landed),,1,Package,50,,100,To dismantle all doors & door frames in the house. ,,
+,010099,new,Hacking,,"
+Landed","new , resale",All,Foyer / Living / Dining ,Supply Labour To Hack Floor Tiles,,1,sqft,2.8,,4,Includes haulage of tiles & clearing of debris for affected areas only. ,,
+,010090,new,Hacking,,Landed,"new , resale",All,Kitchen & Toilet,Supply Labour To Hack Floor & Wall Tiles In Kitchen & 2x Toilets (Landed),,1,Package,2500,,3800,"To hack all floor & wall tiles for 1 kitchen & 2 Toilets. Includes haulage, clearing of debris, dismantling of kitchen cabinets.",,
+,010092,new,Hacking,,Landed,"new , resale",All,Kitchen & Toilet,Supply Labour To Hack Floor Tiles In Kitchen & 2x Toilets (Landed),,1,Package,2100,,3200,"To hack all floor tiles for 1 kitchen & 2 Toilets. Includes the haulage, clearing of debris, and dismantling of Toilet accessories for these affected areas only. ",,
+,010095,new,Hacking,,Landed,"new , resale",All,Kitchen,Supply Labour To Hack Floor Tiles In Kitchen (Landed)  (Quote Upon Site Visit) ,,1,Package,0,,0,"To hack existing floor tiles for kitchen area. Includes haulage of tiles, clearing of debris & dismantling of kitchen cabinetry.",,
+,010079,new,Hacking,,Landed,"new , resale",All,Kitchen,Supply Labour To Hack Wall Tiles In Kitchen (Landed) (Quote Upon Site Visit) ,,1,Package,0,,0,"To hack all wall tiles in kitchen area. Includes the haulage of tiles, clearing of debris and dismantling of kitchen cabinets. ",,
+,010096,new,Hacking,,Landed,"new , resale",All,Toilet,Supply Labour To Hack Floor Tiles & Wall Tiles In 1x Toilet (Landed),,1,Package,900,,1200,"To hack all floor & wall tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010066,new,Hacking,,Landed,"new , resale",All,Toilet,Supply Labour To Hack Floor Tiles In 1x Toilet (Landed)  (Quote Upon Site Visit) ,,1,Package,0,,0,"To hack all floor tiles of 1 Toilet. Includes the haulage, clearing of debris, dismantling of existing Toilet accessories for this area only. ",,
+,010080,new,Hacking,,Landed,"new , resale",All,Toilet,Supply Labour To Hack Wall Tiles In Toilet (Landed) (Quote Upon Site Visit) ,,1,Package,0,,0,To hack all wall tiles at 1 Toilet area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010065,new,Hacking,,Landed,"new , resale",All,"Bedroom, Study Room",Supply Labour To Hack Floor Tiles In 1x Room (Landed)  (Quote Upon Site Visit) ,,1,Package,0,,0,To hack all flooring in 1 room. Includes haulage of tiles & clearing of debris for 1 room only. ,,
+,010081,new,Hacking,,Landed,"new , resale",All,Balcony,Supply Labour To Hack Wall Tiles In Balcony (Landed) (Quote Upon Site Visit) ,,1,Package,0,,0,To hack all wall tiles at yard area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010067,new,Hacking,,Landed,"new , resale",All,Balcony,Supply Labour To Hack Floor Tiles In Balcony (Landed)  (Quote Upon Site Visit) ,,1,Package,0,,0,To hack all floor tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010087,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Dismantle Doors,,1,Package,30,,dismantle,To dismantle 1 door in the house., 500001,
+,010098,new,Hacking,,Landed,"new , resale",All,All,Supply Labour To Hack Service Yard Floor Tiles ,,1,Package,300,,500,To hack all floor tiles at service yard area. Includes the haulage of tiles & clearing of debris for this area only. , 500001,
+,010113,new,Hacking,,Landed,"new , resale",All,"Bedroom, Study Room",Supply Labour To Hack Parquet Flooring In 1x Room (Landed),,1,Package,600,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010114,new,Hacking,,Landed,"new , resale",All,Foyer / Living / Dining ,Supply Labour To Hack Parquet Flooring At Living Area (Landed),,1,Package,1200,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010115,new,Hacking,,Landed,"new , resale",All,"Bedroom, Study Room",Supply Labour To Hack Vinyl Flooring In 1x Room (Landed),,1,Package,500,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,010116,new,Hacking,,Landed,"new , resale",All,Foyer / Living / Dining ,Supply Labour To Hack Vinyl Flooring At Living Area (Landed),,1,Package,1000,,600,To hack all wall tiles at balcony area. Includes the haulage of tiles & clearing of debris for this area only. ,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,010104,New,Hacking,,All,All,All,Toilet,Supply Labour To Remove Toilet Accessories,,1,Package,100,,200,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,ADD-ONS,,,,,,,,,
+,,,,,,,,,Washing & Protection Paper Package (One Level),,1, package,480,,480,"Protection paper is used to cover any existing items in your home while renovations are ongoing, and washing before handover is done. ",,
+,,,,,,,,,Haulage + Clearing of Debris at Kitchen Only,,1,package,1100,,1100,"Haulage labour helps transport heavy materials required in a renovation, such as tiles, cement packs, etc. ",,
+,,,,,,,,,Haulage + Clearing of Debris at Toilet Only,,1,package,900,,900,"Haulage labour helps transport heavy materials required in a renovation, such as tiles, cement packs, etc. ",,
+,,,,,,,,,Haulage + Clearing of Debris Bedroom Only,,1,package,1050,,1050,"Haulage labour helps transport heavy materials required in a renovation, such as tiles, cement packs, etc. ",,
+,,,,,,,,,Haulage + Clearing of Debris Living Only,,1,package,1200,,1200,"Haulage labour helps transport heavy materials required in a renovation, such as tiles, cement packs, etc. ",,
+,,,,,,,,,Supply Labour To Hack Cornices For Entire Unit (HDB 3 Room),,1,package,250,,250,Cornices are ornamental mouldings typically installed at the top walls of a room just below the ceiling for decorative purposes.,,
+,,,,,,,,,Supply Labour To Hack Cornices For Entire Unit (HDB 4 Room),,1,package,300,,300,Cornices are ornamental mouldings typically installed at the top walls of a room just below the ceiling for decorative purposes.,,
+,,,,,,,,,Supply Labour To Hack Cornices For Entire Unit (HDB 5 Room),,1,package,350,,350,Cornices are ornamental mouldings typically installed at the top walls of a room just below the ceiling for decorative purposes.,,
+,,,,,,,,,Supply Labour To Hack Cornices For Entire Unit (EA/EM),,1,package,450,,450,Cornices are ornamental mouldings typically installed at the top walls of a room just below the ceiling for decorative purposes.,,
+,,,,,,,,,Supply Labour To Hack Cornices For Entire Unit (EA/EM),,1,package,600,,600,Cornices are ornamental mouldings typically installed at the top walls of a room just below the ceiling for decorative purposes.,,
+,,,,,,,,,Supply Labour To Dismantle False Ceiling In Living Room & Bedroom,,1,package,500,,500,A false ceiling is a ceiling installed directly beneath the main ceiling of the room. Its advantage is that it allows for multiple lighting points while concealing all the unsightly wires & casings. ,,
+,,,,,,,,,Supply Labour To Remove Bathtub,,1,package,80,,80,"A bathtub can either be installed as a built-in or standalone, depending on the look you are going for. ",,
+,,,,,,,,,Remove Concrete Support At Kitchen,,1,package,250,,250,Concrete support is used for heavier items such as sink and gas hob.,,
+,,,,,,,,,Remove Concrete Support At Toilet,,1,package,250,,250,Concrete support is used for heavier items such as basin.,,
+,,,,,,,,,Supply Labour To Hack Skirting For Entire Unit,,1,package,400,,400,Skirting is used to prevent water from seeping in the edges of the floor.,,
+,,,,,,,,,Supply Labour To Remove Kitchen Cabinet,,1,package,300,,450,,,
+,,,,,,,,,Supply Labour To Remove Toilet Accessories,,1,package,100,,200,,,
+,,,,,,,,,Supply Labour To Dismantle 1x Wardrobe,,1,package,250,,250,,,
+,,,,,,,,,Supply Labour To Dismantle Wardrobe Doors,,1,package,150,,150,,,
+,,,,,,,,,Supply Labour To Remove Whole House Wallpaper (Quote To Be Further Determined),,1,package,600,,150,,,
+,,,,,,,,,Supply Labour To Dismantle 2x Service Yard Windows & Door (BTO),,1,package,250,,250,,,

@@ -33,113 +33,95 @@ def ingest_excel(file_path, tenant_name, create_tenant=False):
         print(f"File not found: {file_path}")
         return
 
-    print(f"Reading {file_path}...")
-    try:
-        df = pd.read_excel(file_path)
-    except Exception as e:
-        print(f"Error reading Excel file: {e}")
-        return
-
-    # Normalize columns
-    df.columns = [c.strip().lower() for c in df.columns]
-    
-    # Map columns to expected keys
-    column_map = {
-        'category': 'category',
-        'description': 'description',
-        'item description': 'description', # Alias
-        'unit': 'unit',
-        'unit price': 'unit_price',
-        'price': 'unit_price', # Alias
-        'code': 'item_code',
-        'item code': 'item_code' # Alias
-    }
-    
-    # Check for required columns
-    required = ['description', 'unit_price']
-    
-    mapped_df = pd.DataFrame()
-    for col in df.columns:
-        if col in column_map:
-            mapped_df[column_map[col]] = df[col]
-        elif col in column_map.values():
-             mapped_df[col] = df[col]
-            
-    # Check if required columns exist
-    missing = [req for req in required if req not in mapped_df.columns]
-    if missing:
-        print(f"Missing required columns: {missing}")
-        print(f"Available columns: {df.columns}")
-        return
-
-    # Clean data
-    mapped_df['description'] = mapped_df['description'].astype(str).str.strip()
-    mapped_df['unit_price'] = pd.to_numeric(mapped_df['unit_price'], errors='coerce').fillna(0)
-    if 'category' in mapped_df.columns:
-        mapped_df['category'] = mapped_df['category'].astype(str).str.strip()
-    else:
-        mapped_df['category'] = 'General'
-        
-    if 'unit' in mapped_df.columns:
-        mapped_df['unit'] = mapped_df['unit'].astype(str).str.strip()
-    else:
-        mapped_df['unit'] = 'LS' # Lump Sum default
-
-    if 'item_code' not in mapped_df.columns:
-        mapped_df['item_code'] = None
-
     conn = get_db_connection()
     cur = conn.cursor()
 
     try:
-        # Get or Create Tenant
+        # Create/Get Tenant
         cur.execute("SELECT id FROM tenants WHERE name = %s", (tenant_name,))
-        res = cur.fetchone()
-        
-        if res:
-            tenant_id = res[0]
-            print(f"Found existing tenant: {tenant_name} ({tenant_id})")
-        elif create_tenant:
-            print(f"Creating new tenant: {tenant_name}")
+        tenant = cur.fetchone()
+        if not tenant:
+            print(f"Creating tenant '{tenant_name}'...")
             cur.execute("INSERT INTO tenants (name) VALUES (%s) RETURNING id", (tenant_name,))
             tenant_id = cur.fetchone()[0]
         else:
-            print(f"Tenant '{tenant_name}' not found. Use --create-tenant to create it.")
-            return
+            tenant_id = tenant[0]
+            print(f"Tenant '{tenant_name}' found (ID: {tenant_id}).")
+            # Optional: Clear existing items for a clean reload
+            print("Clearing existing price list items for this tenant...")
+            cur.execute("DELETE FROM price_lists WHERE tenant_id = %s", (tenant_id,))
 
-        # Prepare data for insertion
-        # Remove duplicates from mapped_df based on description to avoid ON CONFLICT errors within the same batch
-        original_count = len(mapped_df)
-        mapped_df = mapped_df.drop_duplicates(subset=['description'], keep='last')
-        if len(mapped_df) < original_count:
-            print(f"Dropped {original_count - len(mapped_df)} duplicate descriptions.")
+        # Load Data
+        file_ext = os.path.splitext(file_path)[1].lower()
+        if file_ext == '.csv':
+            # New format has headers on row 3 (index 2)
+            df = pd.read_csv(file_path, header=2)
+        else:
+            # Fallback to excel (assuming row 0 header for old format)
+            df = pd.read_excel(file_path)
+
+        print(f"Loaded {len(df)} rows from {file_path}")
         
-        print(f"Ingesting {len(mapped_df)} items...")
+        # normalize columns
+        df.columns = [c.strip() if isinstance(c, str) else c for c in df.columns]
+
+        # Map columns based on file type/content
+        # New CSV: Service_Category, Name, Unit, Price, Service_ID
+        # Old Excel: Category, Description, Unit, Unit Price
         
-        insert_query = """
+        records_to_insert = []
+        seen_descriptions = set()
+
+        for _, row in df.iterrows():
+            # Handle new format
+            if 'Service_Category' in df.columns:
+                category = row.get('Service_Category')
+                description = row.get('Name')
+                unit = row.get('Unit')
+                price = row.get('Price')
+                item_code = row.get('Service_ID')
+            else:
+                # Old format fallback
+                category = row.get('Category')
+                description = row.get('Description')
+                unit = row.get('Unit')
+                price = row.get('Unit Price')
+                item_code = None
+
+            # Clean data
+            if pd.isna(description) or pd.isna(price):
+                continue
+                
+            description = str(description).strip()
+            
+            # Deduplication
+            if description in seen_descriptions:
+                continue
+            seen_descriptions.add(description)
+
+            # Handle price cleaning (remove $, commas)
+            try:
+                val = str(price).replace('$', '').replace(',', '').strip()
+                # Handle ranges or text in price? For now assume numeric-ish
+                unit_price = float(val)
+            except ValueError:
+                unit_price = 0.0
+
+            records_to_insert.append((
+                str(tenant_id),
+                category if not pd.isna(category) else 'General',
+                description,
+                unit if not pd.isna(unit) else 'lot',
+                unit_price,
+                item_code
+            ))
+
+        print(f"Inserting {len(records_to_insert)} items...")
+        
+        execute_values(cur, """
             INSERT INTO price_lists (tenant_id, category, description, unit, unit_price, item_code)
             VALUES %s
-            ON CONFLICT (tenant_id, description) 
-            DO UPDATE SET
-                unit_price = EXCLUDED.unit_price,
-                category = EXCLUDED.category,
-                unit = EXCLUDED.unit,
-                item_code = EXCLUDED.item_code,
-                effective_date = CURRENT_DATE;
-        """
-        
-        data_tuples = []
-        for _, row in mapped_df.iterrows():
-            data_tuples.append((
-                str(tenant_id),
-                row['category'],
-                row['description'],
-                row['unit'],
-                row['unit_price'],
-                row['item_code']
-            ))
-            
-        execute_values(cur, insert_query, data_tuples)
+        """, records_to_insert)
         conn.commit()
         print("Ingestion complete.")
 
