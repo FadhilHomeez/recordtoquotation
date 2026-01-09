@@ -38,7 +38,7 @@ def guard_node(state: RenovationState) -> Dict[str, Any]:
 
     # 2. LLM Check
     # Use Flash for speed
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
     
     prompt = ChatPromptTemplate.from_messages([
         ("system", """You are a security guard for an AI agent. 

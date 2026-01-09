@@ -35,7 +35,7 @@ def extractor_node(state: RenovationState) -> Dict[str, Any]:
 
     print(f"Extracting items from transcript ({len(transcript_text)} chars)...")
 
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-3-pro-preview", temperature=0)
     
     prompt = ChatPromptTemplate.from_messages([
         ("system", """You are an expert renovation quantity surveyor.
@@ -62,11 +62,33 @@ Example Output:
         extracted_items = parse_json_markdown(raw_output)
         
         if not isinstance(extracted_items, list):
-            raise ValueError("Output is not a list")
-            
-        print(f"Extracted {len(extracted_items)} items: {extracted_items}")
+            # If it's a single dict, wrap in list
+            if isinstance(extracted_items, dict):
+                 extracted_items = [extracted_items]
+            else:
+                 raise ValueError("Output is not a list")
+
+        # Convert to ExtractedItem objects
+        from state import ExtractedItem
+        final_items = []
+        for item in extracted_items:
+            if isinstance(item, str):
+                final_items.append(ExtractedItem(
+                    description=item,
+                    quantity=1.0,
+                    unit='lot',
+                    location='General'
+                ))
+            else:
+                final_items.append(ExtractedItem(
+                    description=item.get('description', 'Unknown Item'),
+                    quantity=float(item.get('quantity', 1.0)),
+                    unit=item.get('unit', 'lot'),
+                    location=item.get('location', 'General')
+                ))
         
-        return {"raw_items": extracted_items}
+        print(f"Extracted {len(final_items)} items.")
+        return {"raw_items": final_items}
     except Exception as e:
         print(f"Error in extractor: {e}")
         # Fallback: return original split by newline if LLM fails

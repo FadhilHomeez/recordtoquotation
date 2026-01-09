@@ -12,6 +12,13 @@ class QuotationItem(BaseModel):
     confidence_score: float
     is_suspense: bool = False
     price_list_id: Optional[str] = None
+    location: Optional[str] = None
+
+class ExtractedItem(BaseModel):
+    description: str
+    quantity: float
+    unit: str
+    location: str
 
 class SuspenseItem(BaseModel):
     raw_text: str
@@ -27,7 +34,7 @@ class Quotation(BaseModel):
 # LangGraph State
 class RenovationState(TypedDict):
     # Input
-    raw_items: List[str] # Extracted text items from user input/LLM
+    raw_items: List[ExtractedItem] # Extracted structured items from user input/LLM
     tenant_id: str
     session_id: str
     

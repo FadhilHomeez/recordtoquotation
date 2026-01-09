@@ -70,7 +70,8 @@ def matcher_node(state: RenovationState) -> Dict[str, Any]:
                 choices_map[text] = linked_item # Map alias text to the ACTUAL item data
                 choices_list.append(text)
         
-        for raw_text in raw_items:
+        for item in raw_items:
+            raw_text = item.description # Fuzzy match on description
             print(f"Matching: {raw_text}")
             
             # Simple matching on description for now
@@ -83,24 +84,26 @@ def matcher_node(state: RenovationState) -> Dict[str, Any]:
                 print(f"  Matched: {best_match[0]} ({best_match[1]}%)")
                 item_data = choices_map[best_match[0]]
                 
-                # Assume quantity is 1 for now, logic to extract quantity comes later or pre-processing
-                # Or if raw_text contains quantity? For now default 1.
+                # Use extracted quantity and unit if available/different?
+                # For now, we use the price list unit for pricing consistency,
+                # but we use the extracted quantity.
                 
                 quotation_item = QuotationItem(
                     description=item_data['description'],
-                    quantity=1.0, 
-                    unit=item_data['unit'],
+                    quantity=item.quantity, # Use extracted quantity
+                    unit=item_data['unit'], # Use price list unit
                     unit_price=float(item_data['unit_price']),
-                    subtotal=float(item_data['unit_price']), # qty * price
+                    subtotal=float(item_data['unit_price']) * item.quantity, 
                     confidence_score=float(best_match[1]),
                     price_list_id=str(item_data['id']),
-                    is_suspense=False
+                    is_suspense=False,
+                    location=item.location
                 )
                 matched_items.append(quotation_item)
             else:
                 print(f"  Suspense: {raw_text} (Best: {best_match})")
                 suspense_item = SuspenseItem(
-                    raw_text=raw_text,
+                    raw_text=raw_text, # Keep original description
                     best_matches=[{"text": m[0], "score": m[1]} for m in matches],
                     confidence_score=float(best_match[1]) if best_match else 0.0
                 )
