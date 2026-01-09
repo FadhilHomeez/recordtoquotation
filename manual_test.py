@@ -67,6 +67,7 @@ def manual_test():
     matched = result.get('matched_items', [])
     suspense = result.get('suspense_items', [])
     quotation = result.get('quotation')
+    validation_errors = result.get('validation_errors', [])
     
     if matched:
         print(f"\n✅ MATCHED ({len(matched)}):")
@@ -88,6 +89,11 @@ def manual_test():
 
     if quotation:
         print(f"\n💰 QUOTATION TOTAL: ${quotation.total_amount:,.2f}")
+        
+    if validation_errors:
+        print(f"\n⚠️  VALIDATION WARNINGS/ERRORS ({len(validation_errors)}):")
+        for err in validation_errors:
+            print(f"  - {err}")
     
     print("\n-------------------------------------------")
 

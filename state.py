@@ -37,3 +37,4 @@ class RenovationState(TypedDict):
     
     # Output
     quotation: Optional[Quotation]
+    validation_errors: List[str] # Warnings/Errors found during processing
