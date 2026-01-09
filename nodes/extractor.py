@@ -2,18 +2,27 @@ from typing import Dict, Any, List
 from state import RenovationState
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.output_parsers import StrOutputParser
 import json
-import os
+import re
+
+def parse_json_markdown(text):
+    """
+    Parses a JSON string that might be wrapped in markdown code blocks.
+    """
+    try:
+        # Strip markdown code blocks
+        match = re.search(r"```(json)?(.*?)```", text, re.DOTALL)
+        if match:
+            text = match.group(2)
+        return json.loads(text.strip())
+    except Exception:
+        # Try raw
+        return json.loads(text.strip())
 
 def extractor_node(state: RenovationState) -> Dict[str, Any]:
     print("--- EXTRACTOR NODE ---")
     raw_input = state.get('raw_items', [])
-    
-    # If raw_input is already a list of short strings (from newline split), 
-    # we might want to join them back for context if it looks like a conversation.
-    # But strictly speaking, the API will pass a single string if we change api.py.
-    # For compatibility, handle both list of strings or single string.
     
     transcript_text = ""
     if isinstance(raw_input, list):
@@ -26,26 +35,37 @@ def extractor_node(state: RenovationState) -> Dict[str, Any]:
 
     print(f"Extracting items from transcript ({len(transcript_text)} chars)...")
 
-    llm = ChatGoogleGenerativeAI(model="gemini-3-pro-preview", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
     
     prompt = ChatPromptTemplate.from_messages([
-        ("system", """You are an expert renovation quantity surveyor. 
-Your task is to extract renovation work items from a conversational transcript (which may contain Singlish or colloquialisms).
-Return ONLY a JSON list of strings, where each string is a distinct renovation task mentioned.
-Ignore filler talk like "Hi boss", "Can give quote", "confirm must do".
-Focus on the actual work: e.g., "Wall Hacking", "Floor protection", "Dismantle toilet accessories".
-Keep the extracted terms concise but descriptive enough to match a price list.
-Example Output: ["Wall Hacking", "Supply and overlay vinyl flooring", "Painting of whole house"]
+        ("system", """You are an expert renovation quantity surveyor.
+Your task is to extract only the renovation work items from the transcript.
+1. Ignore all timestamps (e.g., [00:00:00]), speaker names, and small talk.
+2. Focus on the actual scope of work requested (e.g., hacking, flooring, carpentry).
+3. Return ONLY a valid JSON list of strings.
+4. Do not just copy the transcript lines. Extract the underlying items.
+
+Example Input:
+"I want to hack the kitchen wall and do vinyl flooring."
+Example Output:
+["Hacking of kitchen wall", "Supply and lay vinyl flooring"]
 """),
         ("user", "{transcript}")
     ])
     
-    chain = prompt | llm | JsonOutputParser()
+    # Use StrOutputParser to get raw text, then handle JSON manually
+    chain = prompt | llm | StrOutputParser()
     
     try:
-        extracted_items = chain.invoke({"transcript": transcript_text})
+        raw_output = chain.invoke({"transcript": transcript_text})
+        print(f"LLM Raw Output: {raw_output[:100]}...") # Debug print
+        extracted_items = parse_json_markdown(raw_output)
+        
+        if not isinstance(extracted_items, list):
+            raise ValueError("Output is not a list")
+            
         print(f"Extracted {len(extracted_items)} items: {extracted_items}")
-        # Update state with CLEANED items
+        
         return {"raw_items": extracted_items}
     except Exception as e:
         print(f"Error in extractor: {e}")

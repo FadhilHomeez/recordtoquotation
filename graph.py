@@ -3,23 +3,35 @@ from state import RenovationState
 from nodes.matcher import matcher_node
 from nodes.pricer import pricer_node
 from nodes.extractor import extractor_node
+from nodes.guard import guard_node
+
+def guard_condition(state):
+    """Check if guard node detected an error."""
+    if state.get("error"):
+        return END
+    return "extractor"
 
 def build_graph():
     workflow = StateGraph(RenovationState)
     
     # Add nodes
+    workflow.add_node("guard", guard_node)
     workflow.add_node("extractor", extractor_node)
     workflow.add_node("matcher", matcher_node)
     workflow.add_node("pricer", pricer_node)
     
     # 3. Define Edges
-    workflow.set_entry_point("extractor")
+    workflow.set_entry_point("guard")
+    
+    # Conditional edge from guard
+    workflow.add_conditional_edges(
+        "guard",
+        guard_condition
+    )
+    
     workflow.add_edge("extractor", "matcher")
     workflow.add_edge("matcher", "pricer")
-    workflow.add_edge("pricer", END) # (to price matched items) - Interpreted as a comment for this line
-    # Even if there are only suspense items, we pass through pricer (which does nothing for them)
-    # or we could skip pricer?
-    # Simpler to just pass through pricer.
+    workflow.add_edge("pricer", END)
     
     return workflow.compile()
 
